@@ -35,6 +35,8 @@
 
 import CoreBluetooth
 import MetaWearCpp
+import MetaWearCore
+import MetaWearAsyncUtils
 
 /// Callbacks from ScannerModel
 public protocol ScannerModelDelegate: AnyObject {
@@ -119,7 +121,7 @@ public class ScannerModel {
             }
             // The connection could have synd an unknown MAC address
             item.stateDidChange?()
-            item.device.flashLED(color: .green, intensity: 1.0, _repeat: 60)
+            item.device.flashLED(color: MBLColor.green, intensity: 1.0, _repeat: 60)
             DispatchQueue.main.async {
                 self.delegate?.scannerModel(self, confirmBlinkingItem: item) { (confirmed) in
                     resetState()

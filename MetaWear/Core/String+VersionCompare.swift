@@ -33,6 +33,8 @@
  * contact MbientLab via email: hello@mbientlab.com
  */
 
+import Foundation
+
 
 /// String helper functions
 extension String {

@@ -35,6 +35,7 @@
 
 import CoreBluetooth
 import BoltsSwift
+import MetaWearCore
 
 
 /// Possible errors when retrieving firmwares from the MbientLab servers

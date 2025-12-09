@@ -34,6 +34,7 @@
  */
 
 import MetaWearCpp
+import MetaWearCore
 
 #if os(macOS)
 import AppKit

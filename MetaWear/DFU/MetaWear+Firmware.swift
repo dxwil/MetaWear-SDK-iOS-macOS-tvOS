@@ -36,7 +36,8 @@
 import CoreBluetooth
 import MetaWearCpp
 import BoltsSwift
-import iOSDFULibrary
+import NordicDFU
+import MetaWearCore
 
 
 private var initiatorCache: [MetaWear: DFUServiceInitiator] = [:]
@@ -151,8 +152,8 @@ extension MetaWear: DFUServiceDelegate {
 }
 
 extension MetaWear: LoggerDelegate {
-    public func logWith(_ level: iOSDFULibrary.LogLevel, message: String) {
-        let newLevel: LogLevel
+    public func logWith(_ level: NordicDFU.LogLevel, message: String) {
+        let newLevel: MetaWearCore.LogLevel
         switch level {
         case .debug:
             newLevel = LogLevel.debug

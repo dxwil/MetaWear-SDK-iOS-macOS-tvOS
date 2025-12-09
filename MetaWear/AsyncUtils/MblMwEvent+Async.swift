@@ -35,6 +35,7 @@
 
 import MetaWearCpp
 import BoltsSwift
+import MetaWearCore
 
 extension OpaquePointer {
     /// Tasky interface to mbl_mw_event_end_record

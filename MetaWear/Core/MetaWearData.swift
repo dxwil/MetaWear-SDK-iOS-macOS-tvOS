@@ -34,6 +34,7 @@
  */
 
 import MetaWearCpp
+import Foundation
 
 
 /// Native swift struct for holding data from the MetaWear

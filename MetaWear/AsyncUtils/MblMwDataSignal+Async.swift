@@ -35,6 +35,7 @@
 
 import BoltsSwift
 import MetaWearCpp
+import MetaWearCore
 
  /// Task wrappers around various CPP functions with callbacks
 extension OpaquePointer {

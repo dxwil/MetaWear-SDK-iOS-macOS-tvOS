@@ -35,6 +35,7 @@
 
 import MetaWearCpp
 import BoltsSwift
+import MetaWearCore
 
 extension MetaWear {
     public func clearAndReset() {
